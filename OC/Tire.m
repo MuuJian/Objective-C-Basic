@@ -12,10 +12,37 @@
 
 -(id) init
 {
+	if(self = [self initWithPressure:34.0 TreadDepth:20.0])
+	{
+		
+	}
+	return self;
+}
+
+-(id) initWithPressure:(float)pressure
+{
+	if(self = [self initWithPressure:pressure TreadDepth:20.0])
+	{
+
+	}
+	return self;
+}
+
+-(id) initWithTreadDepth:(float)treaddepth
+{
+	if(self = [self initWithPressure:34.0 TreadDepth:treaddepth])
+	{
+
+	}
+	return self;
+}
+
+-(id) initWithPressure:(float)pressure TreadDepth:(float)treaddepth
+{
 	if(self = [super init])
 	{
-		pressure_ = 34.0;
-		treaddepth_ = 20.0;
+		pressure_ = pressure;
+		treaddepth_ = treaddepth;
 	}
 	return self;
 }

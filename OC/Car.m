@@ -30,6 +30,8 @@
 	return engine_;
 }
 
+//普通版本
+/*
 -(void) SetEngine:(Engine *)newEngine
 {
 	if(engine_ != nil)
@@ -37,6 +39,13 @@
 		[engine_ release];
 	}
 	engine_ = [newEngine retain];
+}
+*/
+
+//ARC
+-(void) SetEngine:(Engine *)newEngine
+{
+	engine_ = newEngine;
 }
 
 -(void) SetTire:(Tire *)tire AtIndex:(int)index
@@ -60,11 +69,12 @@
 	NSLog(@"%@", engine_);
 }
 
+/*
 -(void) dealloc
 {
 	[tires_ release];
 	[engine_ release];
 	[super dealloc];
 }
-
+*/
 @end

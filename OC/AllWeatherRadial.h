@@ -12,7 +12,16 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AllWeatherRadial : Tire
+{
+	float rainhandling_;
+	float snowhandling_;
+}
 
+-(id) init;
+-(void) SetRainHandLing:(float)rainhandling;
+-(float) RainHandLing;
+-(void) SetSnowHandLing:(float)snowhandling;
+-(float) snowhandling;
 @end
 
 NS_ASSUME_NONNULL_END

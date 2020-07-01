@@ -11,10 +11,8 @@
 		B442A63B24501EC8002E9A18 /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = B442A63A24501EC8002E9A18 /* Engine.m */; };
 		B442A63E2450205D002E9A18 /* Slant6.m in Sources */ = {isa = PBXBuildFile; fileRef = B442A63D2450205D002E9A18 /* Slant6.m */; };
 		B442A641245020BF002E9A18 /* AllWeatherRadial.m in Sources */ = {isa = PBXBuildFile; fileRef = B442A640245020BF002E9A18 /* AllWeatherRadial.m */; };
-		B463B417244D4CF3002427F2 /* Shape.m in Sources */ = {isa = PBXBuildFile; fileRef = B463B416244D4CF3002427F2 /* Shape.m */; };
 		B463B419244D9A00002427F2 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = B463B418244D9A00002427F2 /* Car.m */; };
 		B4A04C2B24469A7300B2FAF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A04C2A24469A7300B2FAF2 /* main.m */; };
-		B4BF63FF249BC5E10072CE32 /* RetainTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BF63FE249BC5E10072CE32 /* RetainTracker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,14 +36,10 @@
 		B442A63D2450205D002E9A18 /* Slant6.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Slant6.m; sourceTree = "<group>"; };
 		B442A63F245020BF002E9A18 /* AllWeatherRadial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllWeatherRadial.h; sourceTree = "<group>"; };
 		B442A640245020BF002E9A18 /* AllWeatherRadial.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllWeatherRadial.m; sourceTree = "<group>"; };
-		B463B411244D4C0B002427F2 /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
-		B463B416244D4CF3002427F2 /* Shape.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Shape.m; sourceTree = "<group>"; };
 		B463B418244D9A00002427F2 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		B463B41C244D9A7C002427F2 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		B4A04C2724469A7300B2FAF2 /* OC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OC; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A04C2A24469A7300B2FAF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B4BF63FD249BC5E10072CE32 /* RetainTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RetainTracker.h; sourceTree = "<group>"; };
-		B4BF63FE249BC5E10072CE32 /* RetainTracker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RetainTracker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +83,6 @@
 				B442A63D2450205D002E9A18 /* Slant6.m */,
 				B442A63F245020BF002E9A18 /* AllWeatherRadial.h */,
 				B442A640245020BF002E9A18 /* AllWeatherRadial.m */,
-				B4BF63FD249BC5E10072CE32 /* RetainTracker.h */,
-				B4BF63FE249BC5E10072CE32 /* RetainTracker.m */,
-				B463B411244D4C0B002427F2 /* Shape.h */,
-				B463B416244D4CF3002427F2 /* Shape.m */,
 			);
 			path = OC;
 			sourceTree = "<group>";
@@ -154,12 +144,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B463B419244D9A00002427F2 /* Car.m in Sources */,
-				B4BF63FF249BC5E10072CE32 /* RetainTracker.m in Sources */,
 				B442A641245020BF002E9A18 /* AllWeatherRadial.m in Sources */,
 				B442A63E2450205D002E9A18 /* Slant6.m in Sources */,
 				B442A63824501E73002E9A18 /* Tire.m in Sources */,
 				B4A04C2B24469A7300B2FAF2 /* main.m in Sources */,
-				B463B417244D4CF3002427F2 /* Shape.m in Sources */,
 				B442A63B24501EC8002E9A18 /* Engine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +269,7 @@
 		B4A04C2F24469A7300B2FAF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -290,7 +278,7 @@
 		B4A04C3024469A7300B2FAF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

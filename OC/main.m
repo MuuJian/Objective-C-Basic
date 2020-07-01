@@ -18,19 +18,15 @@ int main(int argc, char* argv[])
 		Car* car = [[Car alloc] init];
 		for(int i = 0; i < 4; ++i)
 		{
-			Tire* tire;
-			tire = [[Tire alloc] init];
-			[tire SetPressure:23 + i];
-			[tire SetTreadDepth:33 - i];
+			AllWeatherRadial* tire =[[AllWeatherRadial alloc] init];
 			[car SetTire:tire AtIndex:i];
-			[tire release];
+			//[tire release];
 		}
 		Engine* engine = [[Slant6 alloc] init];
 		[car SetEngine:engine];
 		[car Print];
-		[car release];
+		//[car release];
 		
 	}
-
 	return 0;
 }
