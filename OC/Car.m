@@ -12,10 +12,25 @@
 
 @implementation Car
 
+@synthesize name = name_;
+@synthesize engine = engine_;
+
+-(void) Print
+{
+	NSLog(@"%@ has ",name_);
+	for(int i = 0; i < 4; ++i)
+	{
+		NSLog(@"%@", tires_[i]);
+		//NSLog(@"%d", [tires_[i] retainCount]);
+	}
+	NSLog(@"%@", engine_);
+}
+
 -(id) init
 {
 	if(self = [super init])
 	{
+		name_ = @"car";
 		tires_ = [[NSMutableArray alloc] init];
 		for(int i = 0; i < 4; ++i)
 		{
@@ -25,9 +40,25 @@
 	return self;
 }
 
--(Engine*) Engine
+-(void)SetName:(NSString*)newname
 {
-	return engine_;
+	name_ = [newname copy];
+}
+
+-(void) SetTire:(Tire *)tire AtIndex:(int)index
+{
+	tires_[index] = tire;
+}
+
+-(Tire*) TireAtIndex:(int)index
+{
+	Tire* tire = tires_[index];
+	return tire;
+}
+
+-(void) SetEngine:(Engine *)newEngine
+{
+	engine_ = newEngine;
 }
 
 //普通版本
@@ -43,31 +74,12 @@
 */
 
 //ARC
--(void) SetEngine:(Engine *)newEngine
+/*
+-(Engine*) Engine
 {
-	engine_ = newEngine;
+	return engine_;
 }
-
--(void) SetTire:(Tire *)tire AtIndex:(int)index
-{
-	tires_[index] = tire;
-}
-
--(Tire*) TireAtIndex:(int)index
-{
-	Tire* tire = tires_[index];
-	return tire;
-}
-
--(void) Print
-{
-	for(int i = 0; i < 4; ++i)
-	{
-		NSLog(@"%@", tires_[i]);
-		//NSLog(@"%d", [tires_[i] retainCount]);
-	}
-	NSLog(@"%@", engine_);
-}
+*/
 
 /*
 -(void) dealloc

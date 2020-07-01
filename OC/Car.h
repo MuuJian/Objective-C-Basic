@@ -13,12 +13,19 @@
 
 @interface Car:NSObject
 {
+@private
+	NSString* name_;
 	Engine* engine_;
 	NSMutableArray* tires_;
 }
 
+@property(copy) NSString* name;
+@property(retain) Engine* engine;
+
+/*
 -(Engine*) Engine;
 -(void) SetEngine:(Engine*)newEngine;
+ */
 -(Tire*) TireAtIndex:(int)index;
 -(void) SetTire:(Tire*)tire AtIndex:(int)index;
 -(void) Print;

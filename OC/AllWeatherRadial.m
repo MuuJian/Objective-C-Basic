@@ -10,6 +10,9 @@
 
 @implementation AllWeatherRadial
 
+@synthesize snowhandling = snowhandling_;
+@synthesize rainhandling = rainhandling_;
+
 -(id) init
 {
 	if(self = [super init])
@@ -22,10 +25,11 @@
 
 -(NSString*) description
 {
-	NSString* desc = [[NSString alloc] initWithFormat:@"AllWeatherRadial: %.1f / @%.1f / @%.1f / @%.1f", [self Pressure], [self TreadDepth], [self RainHandLing], [self snowhandling]];
+	NSString* desc = [[NSString alloc] initWithFormat:@"AllWeatherRadial: %.1f / @%.1f / @%.1f / @%.1f", self.pressure, self.treaddepth, self.snowhandling, self.rainhandling];
 	return desc;
 }
 
+/*
 -(void) SetRainHandLing:(float)rainhandling
 {
 	rainhandling_ = rainhandling;
@@ -45,5 +49,5 @@
 {
 	return snowhandling_;
 }
-
+*/
 @end

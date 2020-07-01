@@ -14,16 +14,27 @@
 
 int main(int argc, char* argv[])
 {
-	@autoreleasepool {
+	@autoreleasepool
+	{
 		Car* car = [[Car alloc] init];
 		for(int i = 0; i < 4; ++i)
 		{
 			AllWeatherRadial* tire =[[AllWeatherRadial alloc] init];
+			tire.snowhandling = 20 + i;
+			tire.rainhandling = 28 + i;
+			
 			[car SetTire:tire AtIndex:i];
+			/*
+			[tire SetRainHandLing:20+i];
+			[tire SetSnowHandLing:28+i];
+			NSLog(@"Tire %d's handling is %.f %.f", i, [tire RainHandLing], [tire snowhandling])
+			[car SetTire:tire AtIndex:i];
+			*/
 			//[tire release];
 		}
-		Engine* engine = [[Slant6 alloc] init];
-		[car SetEngine:engine];
+		car.name = @"Herbie";
+		car.engine = [[Slant6 alloc] init];
+		//[car SetEngine:engine];
 		[car Print];
 		//[car release];
 		

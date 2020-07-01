@@ -10,11 +10,21 @@
 
 @implementation Tire
 
+@synthesize pressure = pressure_;
+@synthesize treaddepth = treaddepth_;
+
+-(NSString*) description
+{
+	NSString* desc = [NSString stringWithFormat:@"Tire: pressure: %.1f TreadDepth: %.1f", pressure_, treaddepth_];
+	return desc;
+}
+
 -(id) init
 {
-	if(self = [self initWithPressure:34.0 TreadDepth:20.0])
+	if(self = [super init])
 	{
-		
+		pressure_ = 34.0;
+		treaddepth_ = 20.0;
 	}
 	return self;
 }
@@ -23,7 +33,7 @@
 {
 	if(self = [self initWithPressure:pressure TreadDepth:20.0])
 	{
-
+	
 	}
 	return self;
 }
@@ -47,6 +57,7 @@
 	return self;
 }
 
+/*
 -(void) SetPressure: (float)pressure
 {
 	pressure_ = pressure;
@@ -66,11 +77,6 @@
 {
 	return treaddepth_;
 }
-
--(NSString*) description
-{
-	NSString* desc = [NSString stringWithFormat:@"Tire: pressure: %.1f TreadDepth: %.1f", pressure_, treaddepth_];
-	return desc;
-}
+*/
 
 @end
