@@ -19,8 +19,8 @@
 	NSMutableArray* tires_;
 }
 
-@property(copy) NSString* name;
-@property(retain) Engine* engine;
+@property(nonatomic, copy) NSString* name;
+@property(nonatomic, strong) Engine* engine;
 
 /*
 -(Engine*) engine;

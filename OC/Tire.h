@@ -17,8 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 	float treadDepth_;
 }
 
-@property float pressure;
-@property float treadDepth;
+@property(nonatomic, assign) float pressure;
+@property(nonatomic, assign) float treadDepth;
 
 -(id) initWithPressure:(float)pressure;
 -(id) initWithTreadDepth:(float)treaddDpth;

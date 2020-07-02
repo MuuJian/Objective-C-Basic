@@ -40,10 +40,7 @@
 	return self;
 }
 
--(void)setName:(NSString*)newName
-{
-	name_ = [newName copy];
-}
+
 
 -(void) setTire:(Tire *)tire atIndex:(int)index
 {
@@ -54,11 +51,6 @@
 {
 	Tire* tire = tires_[index];
 	return tire;
-}
-
--(void) setEngine:(Engine *)newEngine
-{
-	engine_ = newEngine;
 }
 
 //普通版本
@@ -88,5 +80,16 @@
 	[engine_ release];
 	[super dealloc];
 }
+ 
+ 
+ -(void) setEngine:(Engine *)newEngine
+ {
+ engine_ = newEngine;
+ }
+ 
+ -(void)setName:(NSString*)newName
+ {
+ name_ = [newName copy];
+ }
 */
 @end
