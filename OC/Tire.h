@@ -14,15 +14,15 @@ NS_ASSUME_NONNULL_BEGIN
 {
 @private
 	float pressure_;
-	float treaddepth_;
+	float treadDepth_;
 }
 
 @property float pressure;
-@property float treaddepth;
+@property float treadDepth;
 
 -(id) initWithPressure:(float)pressure;
--(id) initWithTreadDepth:(float)treaddepth;
--(id) initWithPressure:(float)pressure TreadDepth:(float)treaddepth;
+-(id) initWithTreadDepth:(float)treaddDpth;
+-(id) initWithPressure:(float)pressure TreadDepth:(float)treadDepth;
 
 /*
 -(void) SetPressure:(float)pressure;

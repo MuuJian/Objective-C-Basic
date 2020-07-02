@@ -15,7 +15,7 @@
 @synthesize name = name_;
 @synthesize engine = engine_;
 
--(void) Print
+-(void) print
 {
 	NSLog(@"%@ has ",name_);
 	for(int i = 0; i < 4; ++i)
@@ -40,23 +40,23 @@
 	return self;
 }
 
--(void)SetName:(NSString*)newname
+-(void)setName:(NSString*)newName
 {
-	name_ = [newname copy];
+	name_ = [newName copy];
 }
 
--(void) SetTire:(Tire *)tire AtIndex:(int)index
+-(void) setTire:(Tire *)tire atIndex:(int)index
 {
 	tires_[index] = tire;
 }
 
--(Tire*) TireAtIndex:(int)index
+-(Tire*) tireAtIndex:(int)index
 {
 	Tire* tire = tires_[index];
 	return tire;
 }
 
--(void) SetEngine:(Engine *)newEngine
+-(void) setEngine:(Engine *)newEngine
 {
 	engine_ = newEngine;
 }

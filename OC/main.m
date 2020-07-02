@@ -20,10 +20,10 @@ int main(int argc, char* argv[])
 		for(int i = 0; i < 4; ++i)
 		{
 			AllWeatherRadial* tire =[[AllWeatherRadial alloc] init];
-			tire.snowhandling = 20 + i;
-			tire.rainhandling = 28 + i;
+			tire.snowHandLing = 20 + i;
+			tire.rainHandLing = 28 + i;
 			
-			[car SetTire:tire AtIndex:i];
+			[car setTire:tire atIndex:i];
 			/*
 			[tire SetRainHandLing:20+i];
 			[tire SetSnowHandLing:28+i];
@@ -35,7 +35,7 @@ int main(int argc, char* argv[])
 		car.name = @"Herbie";
 		car.engine = [[Slant6 alloc] init];
 		//[car SetEngine:engine];
-		[car Print];
+		[car print];
 		//[car release];
 		
 	}

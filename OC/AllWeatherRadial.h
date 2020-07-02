@@ -14,18 +14,18 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AllWeatherRadial : Tire
 {
 @private
-	float rainhandling_;
-	float snowhandling_;
+	float rainHandLing_;
+	float snowHandLing_;
 }
 
-@property float rainhandling;
-@property float snowhandling;
+@property float rainHandLing;
+@property float snowHandLing;
 
 /*
- -(void) SetRainHandLing:(float)rainhandling;
- -(float) RainHandLing;
- -(void) SetSnowHandLing:(float)snowhandling;
- -(float) snowhandling;
+ -(void) setRainHandLing:(float)rainHandLing;
+ -(float) rainHandLing;
+ -(void) setSnowHandLing:(float)snowHandLing;
+ -(float) snowHandLing;
  */
 
 

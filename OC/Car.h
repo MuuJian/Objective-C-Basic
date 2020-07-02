@@ -23,11 +23,11 @@
 @property(retain) Engine* engine;
 
 /*
--(Engine*) Engine;
--(void) SetEngine:(Engine*)newEngine;
+-(Engine*) engine;
+-(void) setEngine:(Engine*)newEngine;
  */
--(Tire*) TireAtIndex:(int)index;
--(void) SetTire:(Tire*)tire AtIndex:(int)index;
--(void) Print;
+-(Tire*) tireAtIndex:(int)index;
+-(void) setTire:(Tire*)tire atIndex:(int)index;
+-(void) print;
 
 @end
