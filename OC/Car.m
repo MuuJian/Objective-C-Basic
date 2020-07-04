@@ -31,7 +31,7 @@
 	if(self = [super init])
 	{
 		name_ = @"car";
-		tires_ = [[NSMutableArray alloc] init];
+		tires_ = [NSMutableArray arrayWithCapacity:4];
 		for(int i = 0; i < 4; ++i)
 		{
 			[tires_ addObject:[NSNull null]];

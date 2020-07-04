@@ -25,7 +25,7 @@
 
 -(NSString*) description
 {
-	NSString* desc = [[NSString alloc] initWithFormat:@"AllWeatherRadial: %.1f / @%.1f / @%.1f / @%.1f", self.pressure, self.treadDepth, self.rainHandLing, self.snowHandLing];
+	NSString* desc = [NSString stringWithFormat:@"AllWeatherRadial: %.1f / @%.1f / @%.1f / @%.1f", self.pressure, self.treadDepth, self.rainHandLing, self.snowHandLing];
 	return desc;
 }
 
