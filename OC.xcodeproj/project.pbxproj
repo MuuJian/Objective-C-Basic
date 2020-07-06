@@ -12,6 +12,7 @@
 		B442A63E2450205D002E9A18 /* Slant6.m in Sources */ = {isa = PBXBuildFile; fileRef = B442A63D2450205D002E9A18 /* Slant6.m */; };
 		B442A641245020BF002E9A18 /* AllWeatherRadial.m in Sources */ = {isa = PBXBuildFile; fileRef = B442A640245020BF002E9A18 /* AllWeatherRadial.m */; };
 		B463B419244D9A00002427F2 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = B463B418244D9A00002427F2 /* Car.m */; };
+		B465071D24B37C4700B3A08E /* CategoryThing.m in Sources */ = {isa = PBXBuildFile; fileRef = B465071C24B37C4700B3A08E /* CategoryThing.m */; };
 		B4A04C2B24469A7300B2FAF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A04C2A24469A7300B2FAF2 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,8 @@
 		B442A640245020BF002E9A18 /* AllWeatherRadial.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllWeatherRadial.m; sourceTree = "<group>"; };
 		B463B418244D9A00002427F2 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		B463B41C244D9A7C002427F2 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		B465071B24B37C4700B3A08E /* CategoryThing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryThing.h; sourceTree = "<group>"; };
+		B465071C24B37C4700B3A08E /* CategoryThing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryThing.m; sourceTree = "<group>"; };
 		B4A04C2724469A7300B2FAF2 /* OC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OC; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A04C2A24469A7300B2FAF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +86,8 @@
 				B442A63D2450205D002E9A18 /* Slant6.m */,
 				B442A63F245020BF002E9A18 /* AllWeatherRadial.h */,
 				B442A640245020BF002E9A18 /* AllWeatherRadial.m */,
+				B465071B24B37C4700B3A08E /* CategoryThing.h */,
+				B465071C24B37C4700B3A08E /* CategoryThing.m */,
 			);
 			path = OC;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 				B442A641245020BF002E9A18 /* AllWeatherRadial.m in Sources */,
 				B442A63E2450205D002E9A18 /* Slant6.m in Sources */,
 				B442A63824501E73002E9A18 /* Tire.m in Sources */,
+				B465071D24B37C4700B3A08E /* CategoryThing.m in Sources */,
 				B4A04C2B24469A7300B2FAF2 /* main.m in Sources */,
 				B442A63B24501EC8002E9A18 /* Engine.m in Sources */,
 			);
