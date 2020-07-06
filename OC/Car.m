@@ -40,8 +40,6 @@
 	return self;
 }
 
-
-
 -(void) setTire:(Tire *)tire atIndex:(int)index
 {
 	tires_[index] = tire;
