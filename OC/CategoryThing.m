@@ -20,14 +20,26 @@
 
 @implementation CategoryThing
 
--(void) setThing1:(NSInteger)thing1
+@synthesize thing2 = thing2_;
+@synthesize thing3 = thing3_;
+@synthesize thing1 = thing1_;
+
+-(id) init
 {
-	thing1_ = thing1;
+	if(self = [super init])
+	{
+		thing1_ = 100;
+		thing2_ = 100;
+		thing3_ = 100;
+		thing4_ = 100;
+	}
+	return self;
 }
 
--(NSInteger) Thing1
+-(NSString*) description
 {
-	return thing1_;
+	NSString* desc = [NSString stringWithFormat:@"%d %d %d %d", thing1_, thing2_, thing3_, thing4_];
+	return desc;
 }
 
 @end

@@ -18,8 +18,11 @@ NS_ASSUME_NONNULL_BEGIN
 	NSInteger thing3_;
 }
 
--(void) setThing1:(NSInteger)thing1;
--(NSInteger) Thing1;
+@property(nonatomic, assign) NSInteger thing1;
+@property(nonatomic, assign) NSInteger thing2;
+@property(nonatomic, assign) NSInteger thing3;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

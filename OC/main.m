@@ -11,11 +11,11 @@
 #import "Car.h"
 #import "Slant6.h"
 #import "AllWeatherRadial.h"
+#import "CategoryThing.h"
 
 int main(int argc, char* argv[])
 {
-	@autoreleasepool
-	{
+	@autoreleasepool {
 		Car* car = [[Car alloc] init];
 		for(int i = 0; i < 4; ++i)
 		{
@@ -25,11 +25,11 @@ int main(int argc, char* argv[])
 			
 			[car setTire:tire atIndex:i];
 			/*
-			[tire SetRainHandLing:20+i];
-			[tire SetSnowHandLing:28+i];
-			NSLog(@"Tire %d's handling is %.f %.f", i, [tire RainHandLing], [tire snowhandling])
-			[car SetTire:tire AtIndex:i];
-			*/
+			 [tire SetRainHandLing:20+i];
+			 [tire SetSnowHandLing:28+i];
+			 NSLog(@"Tire %d's handling is %.f %.f", i, [tire RainHandLing], [tire snowhandling])
+			 [car SetTire:tire AtIndex:i];
+			 */
 			//[tire release];
 		}
 		car.name = @"Herbie";
