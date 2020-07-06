@@ -13,6 +13,8 @@
 		B442A641245020BF002E9A18 /* AllWeatherRadial.m in Sources */ = {isa = PBXBuildFile; fileRef = B442A640245020BF002E9A18 /* AllWeatherRadial.m */; };
 		B463B419244D9A00002427F2 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = B463B418244D9A00002427F2 /* Car.m */; };
 		B465071D24B37C4700B3A08E /* CategoryThing.m in Sources */ = {isa = PBXBuildFile; fileRef = B465071C24B37C4700B3A08E /* CategoryThing.m */; };
+		B465072E24B3875E00B3A08E /* RetainTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = B465072A24B3875E00B3A08E /* RetainTracker.m */; };
+		B465072F24B3875E00B3A08E /* Shape.m in Sources */ = {isa = PBXBuildFile; fileRef = B465072D24B3875E00B3A08E /* Shape.m */; };
 		B4A04C2B24469A7300B2FAF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A04C2A24469A7300B2FAF2 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,10 @@
 		B463B41C244D9A7C002427F2 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		B465071B24B37C4700B3A08E /* CategoryThing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryThing.h; sourceTree = "<group>"; };
 		B465071C24B37C4700B3A08E /* CategoryThing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryThing.m; sourceTree = "<group>"; };
+		B465072A24B3875E00B3A08E /* RetainTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetainTracker.m; sourceTree = "<group>"; };
+		B465072B24B3875E00B3A08E /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		B465072C24B3875E00B3A08E /* RetainTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetainTracker.h; sourceTree = "<group>"; };
+		B465072D24B3875E00B3A08E /* Shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shape.m; sourceTree = "<group>"; };
 		B4A04C2724469A7300B2FAF2 /* OC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OC; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A04C2A24469A7300B2FAF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,11 +81,10 @@
 		B4A04C2924469A7300B2FAF2 /* OC */ = {
 			isa = PBXGroup;
 			children = (
-				B4A04C2A24469A7300B2FAF2 /* main.m */,
-				B442A63624501E73002E9A18 /* Tire.h */,
-				B442A63724501E73002E9A18 /* Tire.m */,
 				B463B41C244D9A7C002427F2 /* Car.h */,
 				B463B418244D9A00002427F2 /* Car.m */,
+				B442A63624501E73002E9A18 /* Tire.h */,
+				B442A63724501E73002E9A18 /* Tire.m */,
 				B442A63924501EC8002E9A18 /* Engine.h */,
 				B442A63A24501EC8002E9A18 /* Engine.m */,
 				B442A63C2450205D002E9A18 /* Slant6.h */,
@@ -88,6 +93,11 @@
 				B442A640245020BF002E9A18 /* AllWeatherRadial.m */,
 				B465071B24B37C4700B3A08E /* CategoryThing.h */,
 				B465071C24B37C4700B3A08E /* CategoryThing.m */,
+				B465072C24B3875E00B3A08E /* RetainTracker.h */,
+				B465072A24B3875E00B3A08E /* RetainTracker.m */,
+				B465072B24B3875E00B3A08E /* Shape.h */,
+				B465072D24B3875E00B3A08E /* Shape.m */,
+				B4A04C2A24469A7300B2FAF2 /* main.m */,
 			);
 			path = OC;
 			sourceTree = "<group>";
@@ -149,10 +159,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B463B419244D9A00002427F2 /* Car.m in Sources */,
+				B465072E24B3875E00B3A08E /* RetainTracker.m in Sources */,
 				B442A641245020BF002E9A18 /* AllWeatherRadial.m in Sources */,
 				B442A63E2450205D002E9A18 /* Slant6.m in Sources */,
 				B442A63824501E73002E9A18 /* Tire.m in Sources */,
 				B465071D24B37C4700B3A08E /* CategoryThing.m in Sources */,
+				B465072F24B3875E00B3A08E /* Shape.m in Sources */,
 				B4A04C2B24469A7300B2FAF2 /* main.m in Sources */,
 				B442A63B24501EC8002E9A18 /* Engine.m in Sources */,
 			);
