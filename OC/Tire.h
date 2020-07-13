@@ -24,12 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(id) initWithTreadDepth:(float)treaddDpth;
 -(id) initWithPressure:(float)pressure TreadDepth:(float)treadDepth;
 
-/*
--(void) SetPressure:(float)pressure;
--(float) Pressure;
--(void) SetTreadDepth:(float)treaddepth;
--(float) TreadDepth;
-*/
+
 @end
 
 NS_ASSUME_NONNULL_END

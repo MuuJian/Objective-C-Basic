@@ -37,27 +37,5 @@
 	return desc;
 }
 
-/*
--(void) setRainHandLing:(float)rainHandLing
-{
-	rainHandLing_ = rainHandLing;
-}
-
--(float) rainHandLing
-{
-	return rainHandLing_;
-}
-
--(void) setSnowHandLing:(float)snowHandLing
-{
-	snowHandLing_ = snowHandLing;
-}
-
--(float) snowHandLing
-{
-	return snowHandLing_;
-}
-*/
-
 
 @end

@@ -63,26 +63,5 @@
 	return self;
 }
 
-/*
--(void) SetPressure: (float)pressure
-{
-	pressure_ = pressure;
-}
-
--(float) Pressure
-{
-	return pressure_;
-}
-
--(void) SetTreadDepth: (float)treaddepth
-{
-	treaddepth_ = treaddepth;
-}
-
--(float) TreadDepth
-{
-	return treaddepth_;
-}
-*/
 
 @end

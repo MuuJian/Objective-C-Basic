@@ -22,10 +22,7 @@
 @property(nonatomic, readwrite, copy) NSString* name;
 @property(nonatomic, readwrite, strong) Engine* engine;
 
-/*
--(Engine*) engine;
--(void) setEngine:(Engine*)newEngine;
- */
+
 -(Tire*) tireAtIndex:(int)index;
 -(void) setTire:(Tire*)tire atIndex:(int)index;
 -(void) print;

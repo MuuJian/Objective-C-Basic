@@ -12,6 +12,7 @@
 #import "Slant6.h"
 #import "AllWeatherRadial.h"
 #import "CategoryThing.h"
+#import "BlockCode.h"
 
 int main(int argc, char* argv[])
 {
@@ -40,5 +41,6 @@ int main(int argc, char* argv[])
 		Car* carcopy = [car copy];
 		[carcopy print];
 	}
+	NSLog(@"%d",SquareBlock(2));
 	return 0;
 }

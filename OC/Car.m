@@ -64,43 +64,4 @@
 	NSLog(@"%@", engine_);
 }
 
-//普通版本
-/*
--(void) SetEngine:(Engine *)newEngine
-{
-	if(engine_ != nil)
-	{
-		[engine_ release];
-	}
-	engine_ = [newEngine retain];
-}
-*/
-
-//ARC
-/*
--(Engine*) Engine
-{
-	return engine_;
-}
-*/
-
-/*
--(void) dealloc
-{
-	[tires_ release];
-	[engine_ release];
-	[super dealloc];
-}
- 
- 
- -(void) setEngine:(Engine *)newEngine
- {
- engine_ = newEngine;
- }
- 
- -(void)setName:(NSString*)newName
- {
- name_ = [newName copy];
- }
-*/
 @end
