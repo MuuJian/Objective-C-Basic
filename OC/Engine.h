@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Engine: NSObject
+@interface Engine: NSObject <NSCopying>
 
 @end
 

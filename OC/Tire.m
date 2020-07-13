@@ -19,6 +19,12 @@
 	return desc;
 }
 
+-(id) copyWithZone:(NSZone *)zone
+{
+	Tire* tirecopy = [[[self class] allocWithZone:zone] initWithPressure:pressure_ TreadDepth:treadDepth_];
+	return tirecopy;
+}
+
 -(id) init
 {
 	if(self = [super init])

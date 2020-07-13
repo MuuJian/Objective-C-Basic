@@ -13,6 +13,14 @@
 @synthesize snowHandLing = snowHandLing_;
 @synthesize rainHandLing = rainHandLing_;
 
+-(id) copyWithZone:(NSZone *)zone
+{
+	AllWeatherRadial* tirecopy = [super copyWithZone:zone];
+	tirecopy.rainHandLing = rainHandLing_;
+	tirecopy.snowHandLing = snowHandLing_;
+	return tirecopy;
+}
+
 -(id) init
 {
 	if(self = [super init])

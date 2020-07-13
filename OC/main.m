@@ -37,7 +37,8 @@ int main(int argc, char* argv[])
 		//[car SetEngine:engine];
 		[car print];
 		//[car release];
-		
+		Car* carcopy = [car copy];
+		[carcopy print];
 	}
 	return 0;
 }

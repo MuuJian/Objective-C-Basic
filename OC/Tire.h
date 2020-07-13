@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Tire : NSObject
+@interface Tire : NSObject <NSCopying>
 {
 @private
 	float pressure_;

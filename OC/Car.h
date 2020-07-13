@@ -11,7 +11,7 @@
 @class Tire;
 @class Engine;
 
-@interface Car:NSObject
+@interface Car:NSObject <NSCopying>
 {
 @private
 	NSString* name_;

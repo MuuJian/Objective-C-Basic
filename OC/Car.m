@@ -15,15 +15,17 @@
 @synthesize name = name_;
 @synthesize engine = engine_;
 
--(void) print
+-(id) copyWithZone:(NSZone *)zone
 {
-	NSLog(@"%@ has ",name_);
+	Car* carcopy = [[[self class] allocWithZone:zone] init];
+	carcopy.name = name_;
+	carcopy.engine = [engine_ copy];
 	for(int i = 0; i < 4; ++i)
 	{
-		NSLog(@"%@", tires_[i]);
-		//NSLog(@"%d", [tires_[i] retainCount]);
+		Tire* tirecopy = [[self tireAtIndex:i] copy];
+		[carcopy setTire:tirecopy atIndex:i];
 	}
-	NSLog(@"%@", engine_);
+	return carcopy;
 }
 
 -(id) init
@@ -49,6 +51,17 @@
 {
 	Tire* tire = tires_[index];
 	return tire;
+}
+
+-(void) print
+{
+	NSLog(@"%@ has ",name_);
+	for(int i = 0; i < 4; ++i)
+	{
+		NSLog(@"%@", tires_[i]);
+		//NSLog(@"%d", [tires_[i] retainCount]);
+	}
+	NSLog(@"%@", engine_);
 }
 
 //普通版本
