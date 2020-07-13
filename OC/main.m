@@ -14,6 +14,7 @@
 #import "CategoryThing.h"
 #import "BlockCode.h"
 
+
 int main(int argc, char* argv[])
 {
 	@autoreleasepool {
@@ -25,22 +26,16 @@ int main(int argc, char* argv[])
 			tire.rainHandLing = 28 + i;
 			
 			[car setTire:tire atIndex:i];
-			/*
-			 [tire SetRainHandLing:20+i];
-			 [tire SetSnowHandLing:28+i];
-			 NSLog(@"Tire %d's handling is %.f %.f", i, [tire RainHandLing], [tire snowhandling])
-			 [car SetTire:tire AtIndex:i];
-			 */
-			//[tire release];
+		
 		}
 		car.name = @"Herbie";
 		car.engine = [[Slant6 alloc] init];
-		//[car SetEngine:engine];
 		[car print];
-		//[car release];
 		Car* carcopy = [car copy];
 		[carcopy print];
 	}
-	NSLog(@"%d",SquareBlock(2));
+	int value = 2;
+	int (^Multiply)(int num) = ^(int number){return number * value;};
+	NSLog(@"%d",Multiply(2));
 	return 0;
 }
