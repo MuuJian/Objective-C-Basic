@@ -17,11 +17,20 @@
 	NSString* name_;
 	Engine* engine_;
 	NSMutableArray* tires_;
+	NSString* make_;
+	NSString* model_;
+	int modelyear_;
+	int numberofdoors_;
+	float mileage_;
 }
 
-@property(nonatomic, readwrite, copy) NSString* name;
-@property(nonatomic, readwrite, strong) Engine* engine;
-
+@property(nonatomic, copy) NSString* name;
+@property(nonatomic, strong) Engine* engine;
+@property(nonatomic, copy) NSString* make;
+@property(nonatomic, copy) NSString* model;
+@property(nonatomic, assign) int modelyear;
+@property(nonatomic, assign) int numberofdoors;
+@property(nonatomic, assign) float mileage;
 
 -(Tire*) tireAtIndex:(int)index;
 -(void) setTire:(Tire*)tire atIndex:(int)index;

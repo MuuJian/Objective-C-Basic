@@ -29,13 +29,20 @@ int main(int argc, char* argv[])
 		
 		}
 		car.name = @"Herbie";
+		car.make = @"Honda";
+		car.model = @"CRX";
+		car.numberofdoors = 2;
+		car.modelyear = 1984;
+		car.mileage = 110000;
 		car.engine = [[Slant6 alloc] init];
-		[car print];
+		//[car print];
 		Car* carcopy = [car copy];
-		[carcopy print];
+		NSLog(@"car is %@", carcopy);
+		
+		NSString* name = [car valueForKey:@"name"];
+		NSLog(@"%@", name);
+		[car setValue:@"Harold" forKey:@"name"];
+		NSLog(@"car is %@", car);
 	}
-	int value = 2;
-	int (^Multiply)(int num) = ^(int number){return number * value;};
-	NSLog(@"%d",Multiply(2));
 	return 0;
 }

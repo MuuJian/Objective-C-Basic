@@ -14,10 +14,20 @@
 
 @synthesize name = name_;
 @synthesize engine = engine_;
+@synthesize make = make_;
+@synthesize model = model_;
+@synthesize modelyear = modelyear_;
+@synthesize numberofdoors = numberofdoors_;
+@synthesize mileage = mileage_;
 
 -(id) copyWithZone:(NSZone *)zone
 {
 	Car* carcopy = [[[self class] allocWithZone:zone] init];
+	carcopy.make = make_;
+	carcopy.modelyear = modelyear_;
+	carcopy.model = model_;
+	carcopy.numberofdoors = numberofdoors_;
+	carcopy.mileage = mileage_;
 	carcopy.name = name_;
 	carcopy.engine = [engine_ copy];
 	for(int i = 0; i < 4; ++i)
@@ -40,6 +50,12 @@
 		}
 	}
 	return self;
+}
+
+-(NSString*) description
+{
+	NSString* desc = [NSString stringWithFormat:@"%@, a %d %@ %@, has %d doors, %.1f miles, and %d tires.", name_, modelyear_, make_, model_, numberofdoors_, mileage_, [tires_ count]];
+	return desc;
 }
 
 -(void) setTire:(Tire *)tire atIndex:(int)index
