@@ -13,6 +13,7 @@
 		B442A641245020BF002E9A18 /* AllWeatherRadial.m in Sources */ = {isa = PBXBuildFile; fileRef = B442A640245020BF002E9A18 /* AllWeatherRadial.m */; };
 		B463B419244D9A00002427F2 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = B463B418244D9A00002427F2 /* Car.m */; };
 		B465071D24B37C4700B3A08E /* CategoryThing.m in Sources */ = {isa = PBXBuildFile; fileRef = B465071C24B37C4700B3A08E /* CategoryThing.m */; };
+		B47F928524BF97C800A4D098 /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = B47F928424BF97C800A4D098 /* People.m */; };
 		B4A04C2B24469A7300B2FAF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A04C2A24469A7300B2FAF2 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,8 @@
 		B463B41C244D9A7C002427F2 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		B465071B24B37C4700B3A08E /* CategoryThing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryThing.h; sourceTree = "<group>"; };
 		B465071C24B37C4700B3A08E /* CategoryThing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryThing.m; sourceTree = "<group>"; };
+		B47F928324BF97C700A4D098 /* People.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
+		B47F928424BF97C800A4D098 /* People.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
 		B4A04C2724469A7300B2FAF2 /* OC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OC; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A04C2A24469A7300B2FAF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				B4A04C2A24469A7300B2FAF2 /* main.m */,
+				B47F928324BF97C700A4D098 /* People.h */,
+				B47F928424BF97C800A4D098 /* People.m */,
 				B463B41C244D9A7C002427F2 /* Car.h */,
 				B463B418244D9A00002427F2 /* Car.m */,
 				B442A63624501E73002E9A18 /* Tire.h */,
@@ -150,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B47F928524BF97C800A4D098 /* People.m in Sources */,
 				B463B419244D9A00002427F2 /* Car.m in Sources */,
 				B442A641245020BF002E9A18 /* AllWeatherRadial.m in Sources */,
 				B442A63E2450205D002E9A18 /* Slant6.m in Sources */,

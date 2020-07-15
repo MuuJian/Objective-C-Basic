@@ -13,7 +13,7 @@
 #import "AllWeatherRadial.h"
 #import "CategoryThing.h"
 #import "BlockCode.h"
-
+#import "People.h"
 
 int main(int argc, char* argv[])
 {
@@ -43,6 +43,14 @@ int main(int argc, char* argv[])
 		NSLog(@"%@", name);
 		[car setValue:@"Harold" forKey:@"name"];
 		NSLog(@"car is %@", car);
+		[car setValue:[NSNumber numberWithFloat:0.1] forKey:@"mileage"];
+		NSLog(@"%@", [car valueForKey:@"mileage"]);
+		[car setValue:[NSNumber numberWithInteger:10000] forKeyPath:@"engine.power_"];
+		NSLog(@"%@", [car valueForKeyPath:@"engine.power_"]);
+		
+		People* people = [[People alloc] init];
+		[people setValue:car forKey:@"satoshi"];
+		NSLog(@"%@", [people valueForKey:@"satoshi"]);
 	}
 	return 0;
 }

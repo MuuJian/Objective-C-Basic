@@ -8,6 +8,15 @@
 
 #import "Engine.h"
 
+@interface Engine()
+{
+	
+}
+
+@property(nonatomic, assign) int power_;
+@end
+
+
 @implementation Engine
 
 -(NSString*) description
@@ -21,3 +30,4 @@
 	return enginecopy;
 }
 @end
+
